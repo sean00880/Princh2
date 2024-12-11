@@ -59,7 +59,7 @@ const HomePage: React.FC = () => {
         id="hero"
         className="relative min-h-screen flex items-center justify-center bg-fixed"
         style={{
-          backgroundImage: "url('/images/peggbg2.webp')",
+          backgroundImage: "url('/images/pegg2.jpg')",
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
           backgroundPosition: "center",
@@ -312,7 +312,7 @@ const HomePage: React.FC = () => {
   id="roadmap"
   className="relative py-20 bg-fixed bg-gradient-to-b from-[#252525] via-[#0a0a0a] to-[#000000] text-white"
   style={{
-    backgroundImage: "url('/images/pegg.webp')",
+    backgroundImage: "url('/images/pegg3.jpg')",
     backgroundSize: "cover",
     backgroundAttachment: "fixed",
     backgroundPosition: "center",
