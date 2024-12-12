@@ -43,7 +43,7 @@ export default function TopBar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      $PRINCH
+      $PINCH
     </motion.h1>
       </div>
 

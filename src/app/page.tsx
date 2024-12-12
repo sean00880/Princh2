@@ -93,7 +93,7 @@ const HomePage: React.FC = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      $PRINCH
+      $PINCH
     </motion.h1>
 
     <motion.p
@@ -111,7 +111,7 @@ const HomePage: React.FC = () => {
       animate={{ scale: 1 }}
       transition={{ delay: 0.5, duration: 0.7 }}
     >
-      <span>CA: SoLGrINcHPriNCHabc123</span>
+      <span>CA: SoLGrINcHPiNCHabc123</span>
     </motion.div>
 
     <motion.div
@@ -177,16 +177,16 @@ const HomePage: React.FC = () => {
         data-text="Who is PRINCH?"
         className="text-5xl font-bold text-green-300 text-shadow animate-pulse"
       >
-        Who is PRINCH?
+        Who is PINCH?
       </h2>
 
       {/* Intro Paragraph */}
       <p className="text-lg leading-relaxed text-gray-200">
         Ever wondered what happens when Pepe meets the Grinch? You get{" "}
-        <span className="text-green-400 font-bold">PRINCH</span>, the ultimate
+        <span className="text-green-400 font-bold">PINCH</span>, the ultimate
         Christmas-crashing memecoin that combines the best of crypto, humor,
         and festive mischief. Born on Solana and fueled by holiday chaos,
-        $PRINCH is here to light up your portfolio with green candles (and
+        $PINCH is here to light up your portfolio with green candles (and
         maybe steal a few along the way).
       </p>
 
@@ -197,7 +197,7 @@ const HomePage: React.FC = () => {
 
       {/* Highlight Paragraph */}
       <p className="text-lg leading-relaxed text-gray-100">
-        $PRINCH isn’t just a memecoin—it’s a <span className="italic">heist</span>! 
+        $PINCH isn’t just a memecoin—it’s a <span className="italic">heist</span>! 
         From stealing crypto candles to stealing the show, this holiday hybrid is 
         here to spread laughs and bullish vibes. Remember, it’s not Christmas 
         without a little chaos.
@@ -215,7 +215,7 @@ const HomePage: React.FC = () => {
       <div className="relative group">
         <Image
           src="/images/PRINCHLOGO.webp"
-          alt="PRINCH Character"
+          alt="PINCH Character"
           width={500}
           height={500}
           className="rounded-full p-20 shadow-lg transform group-hover:scale-110 transition-transform duration-300"
@@ -265,8 +265,8 @@ const HomePage: React.FC = () => {
   {/* Content */}
   <div className="relative z-10 flex flex-col items-center space-y-12 px-6 w-full">
     {/* Title */}
-    <h2 className="text-4xl font-extrabold text-center text-green-300" data-text="$PRINCH Tokenomics">
-      $PRINCH Tokenomics
+    <h2 className="text-4xl font-extrabold text-center text-green-300" data-text="$PINCH Tokenomics">
+      $PINCH Tokenomics
     </h2>
 
     {/* Tokenomics Cards */}
@@ -308,7 +308,7 @@ const HomePage: React.FC = () => {
 
     {/* Additional Info */}
     <p className="text-center text-gray-300 text-sm md:text-lg max-w-3xl">
-      $PRINCH is here to spread cheer and green candles! Fully locked liquidity and minimal taxes make it the ultimate holiday treat for your crypto wallet.
+      $PINCH is here to spread cheer and green candles! Fully locked liquidity and minimal taxes make it the ultimate holiday treat for your crypto wallet.
     </p>
   </div>
 
@@ -351,9 +351,9 @@ const HomePage: React.FC = () => {
   <div className="relative z-10 max-w-7xl mx-auto px-6">
     <h2
       className="text-5xl md:text-6xl font-bold text-center text-yellow-400 mb-16"
-      data-text="$PRINCH Roadmap"
+      data-text="$PINCH Roadmap"
     >
-      $PRINCH Roadmap
+      $PINCH Roadmap
     </h2>
 
     {/* Roadmap Grid */}
@@ -362,7 +362,7 @@ const HomePage: React.FC = () => {
       {[
         {
           phase: "Phase 1: Naughty Beginnings",
-          details: "Launch the $PRINCH website, gather the community of mischievous memers, and drop some Grinch-inspired holiday chaos.",
+          details: "Launch the $PINCH website, gather the community of mischievous memers, and drop some Grinch-inspired holiday chaos.",
           icon: "/images/phase1.webp",
         },
         {
@@ -427,7 +427,7 @@ const HomePage: React.FC = () => {
         id="footer"
         className="py-6 bg-black text-white text-center"
       >
-        <p>© 2024 PEGG | All Rights Reserved</p>
+        <p>© 2024<em>PINCH</em> | All Rights Reserved</p>
       </footer>
     </div>
   );
