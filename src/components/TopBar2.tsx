@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function TopBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -30,12 +31,20 @@ export default function TopBar() {
       <div className="flex-1 md:flex-none flex justify-center items-center">
         <Link href="#">
         <Image
-          src="/images/pepegg.png" // Static logo path for simplicity
+          src="/images/princh.webp" // Static logo path for simplicity
           alt="Logo"
-          width={100}
-          height={100}
+          width={70}
+          height={70}
           className="rounded-full"
         /></Link>
+         <motion.h1
+      className="text-5xl md:text-4xl font-extrabold text-green-200 italic"
+      initial={{ y: -50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      $PRINCH
+    </motion.h1>
       </div>
 
       {/* Desktop Navigation Links */}
