@@ -288,8 +288,8 @@ const HomePage: React.FC = () => {
           Taxes
         </h3>
         <p className="text-center text-lg font-semibold text-white mt-2">
-          <span className="block">Buy: 1%</span>
-          <span className="block">Sell: 1%</span>
+          <span className="block">Buy: 0%</span>
+          <span className="block">Sell: 0%</span>
         </p>
         <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-gradient-to-r from-yellow-500 to-red-500 rounded-lg"></div>
       </div>
