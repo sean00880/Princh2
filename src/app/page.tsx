@@ -363,12 +363,12 @@ const HomePage: React.FC = () => {
         {
           phase: "Phase 1: Naughty Beginnings",
           details: "Launch the $PRINCH website, gather the community of mischievous memers, and drop some Grinch-inspired holiday chaos.",
-          icon: "/images/pegg2.png",
+          icon: "/images/phase1.webp",
         },
         {
           phase: "Phase 2: List Mania",
           details: "Secure listings on major platforms like Solscan and CoinGecko, raising visibility among memecoin enthusiasts.",
-          icon: "/images/pegg1.png",
+          icon: "/images/phase2.webp",
         },
         {
           phase: "Phase 3: Meme Domination",
