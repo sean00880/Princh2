@@ -4,7 +4,14 @@ import Image from 'next/image';
 
 interface AboutSectionProps {
   images: string[];
+  features: {
+    title: string;
+    shortText: string;
+    expandedText: string;
+    image: string;
+  }[];
 }
+
 
 const AboutSection: React.FC<AboutSectionProps> = ({ images }) => {
   const [selectedImage, setSelectedImage] = useState(images[0] || '/images/default_logo.png');
