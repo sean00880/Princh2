@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 export default function TopBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,9 +12,9 @@ export default function TopBar() {
   };
 
   return (
-    <div className="topbar bg-black flex items-center justify-between px-4 py-4 shadow-lg border-b border-[#f3f3f3] relative">
+    <div className="topbar flex items-center justify-between px-4 py-3 shadow-lg relative z-50 bg-gradient-to-b from-black via-[#372347] to-black">
       {/* Hamburger Menu for Mobile */}
-      <div className="flex md:hidden">
+      <div className="flex md:hidden z-[60]">
         <button
           className={`hamburger ${isMobileMenuOpen ? "open" : ""}`}
           onClick={toggleMobileMenu}
@@ -29,63 +28,84 @@ export default function TopBar() {
 
       {/* Centered Logo Container */}
       <div className="flex-1 md:flex-none flex justify-center items-center">
-        <Link href="#">
-        <Image
-          src="/images/princh.webp" // Static logo path for simplicity
-          alt="Logo"
-          width={70}
-          height={70}
-          className="rounded-full"
-        /></Link>
-         <motion.h1
-      className="text-5xl md:text-4xl font-extrabold text-green-200 italic"
-      initial={{ y: -50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1 }}
-    >
-      $PINCH
-    </motion.h1>
+        <Link href="/">
+          <Image
+            src="/images/LOGODark.png"
+            alt="Logo"
+            width={240}
+            height={40}
+            className="glitch-effect"
+          />
+        </Link>
       </div>
 
       {/* Desktop Navigation Links */}
-      <nav className="hidden md:flex w-1/3 justify-end items-center space-x-4 lg:space-x-6">
-        <Link href="/#home" className="hover:text-blue-500 transition">
+      <nav className="hidden md:flex justify-end items-center space-x-4 lg:space-x-6 text-white">
+        <Link href="/#home" className="hover:text-purple-400 transition">
           Home
         </Link>
-        
-          <Link href="/#about" className="hover:text-blue-500 transition">
-            About
-          </Link>
-      
-        <Link href="/#tokenomics" className="hover:text-blue-500 transition">
+        <Link href="/#about" className="hover:text-purple-400 transition">
+          About
+        </Link>
+        <Link href="/#utilities" className="hover:text-purple-400 transition">
+          Utilities
+        </Link>
+        <Link href="/#tokenomics" className="hover:text-purple-400 transition">
           Tokenomics
         </Link>
-        <Link href="/#roadmap" className="hover:text-blue-500 transition">
+        <Link href="/#roadmap" className="hover:text-purple-400 transition">
           Roadmap
         </Link>
-  
-       
+        <Link href="/#resources" className="hover:text-purple-400 transition">
+          Resources
+        </Link>
       </nav>
 
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
-        <div className="block absolute top-16 left-0 w-full bg-gray-900 text-white p-4 shadow-lg rounded-lg z-50">
-          <Link href="/#home" className="block px-4 py-2 hover:bg-black rounded">
+        <div className="absolute top-16 left-0 w-full bg-black text-white p-4 shadow-lg rounded-lg z-40">
+          <Link
+            href="/#home"
+            className="block px-4 py-2 hover:bg-purple-700 rounded"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
             Home
           </Link>
-         
-            <Link href="/#about" className="block px-4 py-2 hover:bg-black rounded">
-              About
-            </Link>
-            
-          <Link href="/#tokenomics" className="block px-4 py-2 hover:bg-black rounded">
+          <Link
+            href="/#about"
+            className="block px-4 py-2 hover:bg-purple-700 rounded"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            About
+          </Link>
+          <Link
+            href="/#utilities"
+            className="block px-4 py-2 hover:bg-purple-700 rounded"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Utilities
+          </Link>
+          <Link
+            href="/#tokenomics"
+            className="block px-4 py-2 hover:bg-purple-700 rounded"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
             Tokenomics
           </Link>
-          <Link href="/#roadmap" className="block px-4 py-2 hover:bg-black rounded">
+          <Link
+            href="/#roadmap"
+            className="block px-4 py-2 hover:bg-purple-700 rounded"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
             Roadmap
           </Link>
-         
-          
+          <Link
+            href="/#resources"
+            className="block px-4 py-2 hover:bg-purple-700 rounded"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Resources
+          </Link>
         </div>
       )}
 
@@ -100,6 +120,7 @@ export default function TopBar() {
           background: transparent;
           border: none;
           cursor: pointer;
+          z-index: 60;
         }
         .line {
           width: 100%;
